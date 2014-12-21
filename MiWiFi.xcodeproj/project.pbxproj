@@ -1,0 +1,719 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1849FC011A382ACF008C71B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1849FC001A382ACF008C71B4 /* main.m */; };
+		1849FC041A382ACF008C71B4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1849FC031A382ACF008C71B4 /* AppDelegate.m */; };
+		1849FC0A1A382ACF008C71B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1849FC081A382ACF008C71B4 /* Main.storyboard */; };
+		1849FC0C1A382ACF008C71B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1849FC0B1A382ACF008C71B4 /* Images.xcassets */; };
+		1849FC0F1A382ACF008C71B4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1849FC0D1A382ACF008C71B4 /* LaunchScreen.xib */; };
+		1849FC1B1A382ACF008C71B4 /* MiWiFiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1849FC1A1A382ACF008C71B4 /* MiWiFiTests.m */; };
+		1849FC2E1A383748008C71B4 /* DEMORootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1849FC251A383748008C71B4 /* DEMORootViewController.m */; };
+		1849FC301A383748008C71B4 /* DEMOMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1849FC291A383748008C71B4 /* DEMOMenuViewController.m */; };
+		1849FC311A383748008C71B4 /* DEMONavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1849FC2B1A383748008C71B4 /* DEMONavigationController.m */; };
+		1849FC321A383748008C71B4 /* DEMOSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1849FC2D1A383748008C71B4 /* DEMOSecondViewController.m */; };
+		1849FC341A3845C8008C71B4 /* avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 1849FC331A3845C8008C71B4 /* avatar.png */; };
+		184B4FF61A455EC700974BE9 /* AddPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184B4FF31A455EC700974BE9 /* AddPhotoViewController.m */; };
+		184B4FF71A455EC700974BE9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184B4FF51A455EC700974BE9 /* ViewController.m */; };
+		184B4FFD1A455F1E00974BE9 /* TWCoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 184B4FFA1A455F1E00974BE9 /* TWCoreDataHelper.m */; };
+		184B4FFE1A455F1E00974BE9 /* TWPictureDataTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 184B4FFC1A455F1E00974BE9 /* TWPictureDataTransformer.m */; };
+		184B50011A455F3000974BE9 /* MiWiFi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 184B4FFF1A455F3000974BE9 /* MiWiFi.xcdatamodeld */; };
+		184B50041A45603A00974BE9 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 184B50031A45603A00974BE9 /* Photo.m */; };
+		184B50091A45682A00974BE9 /* TWPhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 184B50061A45682A00974BE9 /* TWPhotoCollectionViewCell.m */; };
+		184B500A1A45682A00974BE9 /* TWPhotosCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184B50081A45682A00974BE9 /* TWPhotosCollectionViewController.m */; };
+		184B500D1A45687300974BE9 /* TWPhotoDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184B500C1A45687300974BE9 /* TWPhotoDetailViewController.m */; };
+		1891B62E1A4026D500040E8E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F23C7E1A397A810053AE88 /* SystemConfiguration.framework */; };
+		1891B6311A4026E600040E8E /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 1891B6301A4026E600040E8E /* Reachability.m */; };
+		18A45EB21A3A7C6100955141 /* SAMultisectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A45EB11A3A7C6100955141 /* SAMultisectorViewController.m */; };
+		18B130381A3EB3AE00EC6693 /* TimeLineViewControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B130371A3EB3AE00EC6693 /* TimeLineViewControl.m */; };
+		18B130521A3EB47900EC6693 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B1303C1A3EB47900EC6693 /* MASCompositeConstraint.m */; };
+		18B130531A3EB47900EC6693 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B1303F1A3EB47900EC6693 /* MASConstraint.m */; };
+		18B130541A3EB47900EC6693 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B130411A3EB47900EC6693 /* MASConstraintMaker.m */; };
+		18B130551A3EB47900EC6693 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B130431A3EB47900EC6693 /* MASLayoutConstraint.m */; };
+		18B130561A3EB47900EC6693 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B130471A3EB47900EC6693 /* MASViewAttribute.m */; };
+		18B130571A3EB47900EC6693 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B130491A3EB47900EC6693 /* MASViewConstraint.m */; };
+		18B130581A3EB47900EC6693 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B1304B1A3EB47900EC6693 /* NSArray+MASAdditions.m */; };
+		18B130591A3EB47900EC6693 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B1304E1A3EB47900EC6693 /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		18B1305A1A3EB47900EC6693 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B130501A3EB47900EC6693 /* View+MASAdditions.m */; };
+		9879CE88FC798A5BF97FEF2B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA60794B027386614AF57C6B /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1849FC151A382ACF008C71B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1849FBF31A382ACF008C71B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1849FBFA1A382ACF008C71B4;
+			remoteInfo = MiWiFi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1849FBFB1A382ACF008C71B4 /* MiWiFi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiWiFi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1849FBFF1A382ACF008C71B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1849FC001A382ACF008C71B4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1849FC021A382ACF008C71B4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1849FC031A382ACF008C71B4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1849FC091A382ACF008C71B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1849FC0B1A382ACF008C71B4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1849FC0E1A382ACF008C71B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		1849FC141A382ACF008C71B4 /* MiWiFiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiWiFiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1849FC191A382ACF008C71B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1849FC1A1A382ACF008C71B4 /* MiWiFiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MiWiFiTests.m; sourceTree = "<group>"; };
+		1849FC241A383748008C71B4 /* DEMORootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEMORootViewController.h; sourceTree = "<group>"; };
+		1849FC251A383748008C71B4 /* DEMORootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEMORootViewController.m; sourceTree = "<group>"; };
+		1849FC281A383748008C71B4 /* DEMOMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEMOMenuViewController.h; sourceTree = "<group>"; };
+		1849FC291A383748008C71B4 /* DEMOMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEMOMenuViewController.m; sourceTree = "<group>"; };
+		1849FC2A1A383748008C71B4 /* DEMONavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEMONavigationController.h; sourceTree = "<group>"; };
+		1849FC2B1A383748008C71B4 /* DEMONavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEMONavigationController.m; sourceTree = "<group>"; };
+		1849FC2C1A383748008C71B4 /* DEMOSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEMOSecondViewController.h; sourceTree = "<group>"; };
+		1849FC2D1A383748008C71B4 /* DEMOSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEMOSecondViewController.m; sourceTree = "<group>"; };
+		1849FC331A3845C8008C71B4 /* avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar.png; sourceTree = "<group>"; };
+		184B4FF21A455EC700974BE9 /* AddPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddPhotoViewController.h; sourceTree = "<group>"; };
+		184B4FF31A455EC700974BE9 /* AddPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddPhotoViewController.m; sourceTree = "<group>"; };
+		184B4FF41A455EC700974BE9 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		184B4FF51A455EC700974BE9 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		184B4FF91A455F1E00974BE9 /* TWCoreDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWCoreDataHelper.h; sourceTree = "<group>"; };
+		184B4FFA1A455F1E00974BE9 /* TWCoreDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWCoreDataHelper.m; sourceTree = "<group>"; };
+		184B4FFB1A455F1E00974BE9 /* TWPictureDataTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWPictureDataTransformer.h; sourceTree = "<group>"; };
+		184B4FFC1A455F1E00974BE9 /* TWPictureDataTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWPictureDataTransformer.m; sourceTree = "<group>"; };
+		184B50001A455F3000974BE9 /* MiWiFi.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MiWiFi.xcdatamodel; sourceTree = "<group>"; };
+		184B50021A45603A00974BE9 /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Photo.h; path = MiWiFi/Photo.h; sourceTree = "<group>"; };
+		184B50031A45603A00974BE9 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Photo.m; path = MiWiFi/Photo.m; sourceTree = "<group>"; };
+		184B50051A45682A00974BE9 /* TWPhotoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWPhotoCollectionViewCell.h; sourceTree = "<group>"; };
+		184B50061A45682A00974BE9 /* TWPhotoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWPhotoCollectionViewCell.m; sourceTree = "<group>"; };
+		184B50071A45682A00974BE9 /* TWPhotosCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWPhotosCollectionViewController.h; sourceTree = "<group>"; };
+		184B50081A45682A00974BE9 /* TWPhotosCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWPhotosCollectionViewController.m; sourceTree = "<group>"; };
+		184B500B1A45687300974BE9 /* TWPhotoDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWPhotoDetailViewController.h; sourceTree = "<group>"; };
+		184B500C1A45687300974BE9 /* TWPhotoDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWPhotoDetailViewController.m; sourceTree = "<group>"; };
+		1891B62F1A4026E600040E8E /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		1891B6301A4026E600040E8E /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		18A45EB01A3A7C6100955141 /* SAMultisectorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMultisectorViewController.h; sourceTree = "<group>"; };
+		18A45EB11A3A7C6100955141 /* SAMultisectorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMultisectorViewController.m; sourceTree = "<group>"; };
+		18B130361A3EB3AE00EC6693 /* TimeLineViewControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeLineViewControl.h; sourceTree = "<group>"; };
+		18B130371A3EB3AE00EC6693 /* TimeLineViewControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeLineViewControl.m; sourceTree = "<group>"; };
+		18B1303B1A3EB47900EC6693 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		18B1303C1A3EB47900EC6693 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
+		18B1303D1A3EB47900EC6693 /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		18B1303E1A3EB47900EC6693 /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		18B1303F1A3EB47900EC6693 /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
+		18B130401A3EB47900EC6693 /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		18B130411A3EB47900EC6693 /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
+		18B130421A3EB47900EC6693 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		18B130431A3EB47900EC6693 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		18B130441A3EB47900EC6693 /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		18B130451A3EB47900EC6693 /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		18B130461A3EB47900EC6693 /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		18B130471A3EB47900EC6693 /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		18B130481A3EB47900EC6693 /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		18B130491A3EB47900EC6693 /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
+		18B1304A1A3EB47900EC6693 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		18B1304B1A3EB47900EC6693 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		18B1304C1A3EB47900EC6693 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		18B1304D1A3EB47900EC6693 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		18B1304E1A3EB47900EC6693 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		18B1304F1A3EB47900EC6693 /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		18B130501A3EB47900EC6693 /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
+		18B130511A3EB47900EC6693 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		18F23C6E1A3979A80053AE88 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		18F23C701A3979B30053AE88 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		18F23C721A3979C10053AE88 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		18F23C741A397A010053AE88 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		18F23C761A397A1A0053AE88 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		18F23C781A397A2A0053AE88 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		18F23C7A1A397A350053AE88 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		18F23C7C1A397A620053AE88 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		18F23C7E1A397A810053AE88 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		7FB9841AA49D5CB2B0495D35 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		8EA46D8A3730F16BC9564BFA /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		AA60794B027386614AF57C6B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1849FBF81A382ACF008C71B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1891B62E1A4026D500040E8E /* SystemConfiguration.framework in Frameworks */,
+				9879CE88FC798A5BF97FEF2B /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1849FC111A382ACF008C71B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1849FBF21A382ACF008C71B4 = {
+			isa = PBXGroup;
+			children = (
+				184B4FF81A455EEA00974BE9 /* Model */,
+				1849FBFD1A382ACF008C71B4 /* MiWiFi */,
+				1849FC171A382ACF008C71B4 /* MiWiFiTests */,
+				1849FBFC1A382ACF008C71B4 /* Products */,
+				7AD663B99D5E6C40FB776A5C /* Pods */,
+				C2DCC291534961833E2CEAB0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1849FBFC1A382ACF008C71B4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1849FBFB1A382ACF008C71B4 /* MiWiFi.app */,
+				1849FC141A382ACF008C71B4 /* MiWiFiTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1849FBFD1A382ACF008C71B4 /* MiWiFi */ = {
+			isa = PBXGroup;
+			children = (
+				184B500B1A45687300974BE9 /* TWPhotoDetailViewController.h */,
+				184B500C1A45687300974BE9 /* TWPhotoDetailViewController.m */,
+				184B50051A45682A00974BE9 /* TWPhotoCollectionViewCell.h */,
+				184B50061A45682A00974BE9 /* TWPhotoCollectionViewCell.m */,
+				184B50071A45682A00974BE9 /* TWPhotosCollectionViewController.h */,
+				184B50081A45682A00974BE9 /* TWPhotosCollectionViewController.m */,
+				184B4FF21A455EC700974BE9 /* AddPhotoViewController.h */,
+				184B4FF31A455EC700974BE9 /* AddPhotoViewController.m */,
+				184B4FF41A455EC700974BE9 /* ViewController.h */,
+				184B4FF51A455EC700974BE9 /* ViewController.m */,
+				1891B62F1A4026E600040E8E /* Reachability.h */,
+				1891B6301A4026E600040E8E /* Reachability.m */,
+				18B130351A3EB37800EC6693 /* Timeline */,
+				18A45EB01A3A7C6100955141 /* SAMultisectorViewController.h */,
+				18A45EB11A3A7C6100955141 /* SAMultisectorViewController.m */,
+				1849FC021A382ACF008C71B4 /* AppDelegate.h */,
+				1849FC241A383748008C71B4 /* DEMORootViewController.h */,
+				1849FC251A383748008C71B4 /* DEMORootViewController.m */,
+				1849FC281A383748008C71B4 /* DEMOMenuViewController.h */,
+				1849FC291A383748008C71B4 /* DEMOMenuViewController.m */,
+				1849FC2A1A383748008C71B4 /* DEMONavigationController.h */,
+				1849FC2B1A383748008C71B4 /* DEMONavigationController.m */,
+				1849FC2C1A383748008C71B4 /* DEMOSecondViewController.h */,
+				1849FC2D1A383748008C71B4 /* DEMOSecondViewController.m */,
+				1849FC031A382ACF008C71B4 /* AppDelegate.m */,
+				1849FC081A382ACF008C71B4 /* Main.storyboard */,
+				1849FC0B1A382ACF008C71B4 /* Images.xcassets */,
+				1849FC331A3845C8008C71B4 /* avatar.png */,
+				1849FC0D1A382ACF008C71B4 /* LaunchScreen.xib */,
+				1849FBFE1A382ACF008C71B4 /* Supporting Files */,
+			);
+			path = MiWiFi;
+			sourceTree = "<group>";
+		};
+		1849FBFE1A382ACF008C71B4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1849FBFF1A382ACF008C71B4 /* Info.plist */,
+				1849FC001A382ACF008C71B4 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1849FC171A382ACF008C71B4 /* MiWiFiTests */ = {
+			isa = PBXGroup;
+			children = (
+				1849FC1A1A382ACF008C71B4 /* MiWiFiTests.m */,
+				1849FC181A382ACF008C71B4 /* Supporting Files */,
+			);
+			path = MiWiFiTests;
+			sourceTree = "<group>";
+		};
+		1849FC181A382ACF008C71B4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1849FC191A382ACF008C71B4 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		184B4FF81A455EEA00974BE9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				184B4FF91A455F1E00974BE9 /* TWCoreDataHelper.h */,
+				184B4FFA1A455F1E00974BE9 /* TWCoreDataHelper.m */,
+				184B4FFB1A455F1E00974BE9 /* TWPictureDataTransformer.h */,
+				184B4FFC1A455F1E00974BE9 /* TWPictureDataTransformer.m */,
+				184B4FFF1A455F3000974BE9 /* MiWiFi.xcdatamodeld */,
+				184B50021A45603A00974BE9 /* Photo.h */,
+				184B50031A45603A00974BE9 /* Photo.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		18B130351A3EB37800EC6693 /* Timeline */ = {
+			isa = PBXGroup;
+			children = (
+				18B1303A1A3EB45300EC6693 /* Masonry */,
+				18B130391A3EB43500EC6693 /* Timeline */,
+			);
+			name = Timeline;
+			sourceTree = "<group>";
+		};
+		18B130391A3EB43500EC6693 /* Timeline */ = {
+			isa = PBXGroup;
+			children = (
+				18B130361A3EB3AE00EC6693 /* TimeLineViewControl.h */,
+				18B130371A3EB3AE00EC6693 /* TimeLineViewControl.m */,
+			);
+			name = Timeline;
+			sourceTree = "<group>";
+		};
+		18B1303A1A3EB45300EC6693 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				18B1303B1A3EB47900EC6693 /* MASCompositeConstraint.h */,
+				18B1303C1A3EB47900EC6693 /* MASCompositeConstraint.m */,
+				18B1303D1A3EB47900EC6693 /* MASConstraint+Private.h */,
+				18B1303E1A3EB47900EC6693 /* MASConstraint.h */,
+				18B1303F1A3EB47900EC6693 /* MASConstraint.m */,
+				18B130401A3EB47900EC6693 /* MASConstraintMaker.h */,
+				18B130411A3EB47900EC6693 /* MASConstraintMaker.m */,
+				18B130421A3EB47900EC6693 /* MASLayoutConstraint.h */,
+				18B130431A3EB47900EC6693 /* MASLayoutConstraint.m */,
+				18B130441A3EB47900EC6693 /* Masonry.h */,
+				18B130451A3EB47900EC6693 /* MASUtilities.h */,
+				18B130461A3EB47900EC6693 /* MASViewAttribute.h */,
+				18B130471A3EB47900EC6693 /* MASViewAttribute.m */,
+				18B130481A3EB47900EC6693 /* MASViewConstraint.h */,
+				18B130491A3EB47900EC6693 /* MASViewConstraint.m */,
+				18B1304A1A3EB47900EC6693 /* NSArray+MASAdditions.h */,
+				18B1304B1A3EB47900EC6693 /* NSArray+MASAdditions.m */,
+				18B1304C1A3EB47900EC6693 /* NSArray+MASShorthandAdditions.h */,
+				18B1304D1A3EB47900EC6693 /* NSLayoutConstraint+MASDebugAdditions.h */,
+				18B1304E1A3EB47900EC6693 /* NSLayoutConstraint+MASDebugAdditions.m */,
+				18B1304F1A3EB47900EC6693 /* View+MASAdditions.h */,
+				18B130501A3EB47900EC6693 /* View+MASAdditions.m */,
+				18B130511A3EB47900EC6693 /* View+MASShorthandAdditions.h */,
+			);
+			name = Masonry;
+			sourceTree = "<group>";
+		};
+		7AD663B99D5E6C40FB776A5C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8EA46D8A3730F16BC9564BFA /* Pods.debug.xcconfig */,
+				7FB9841AA49D5CB2B0495D35 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C2DCC291534961833E2CEAB0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18F23C7E1A397A810053AE88 /* SystemConfiguration.framework */,
+				18F23C7C1A397A620053AE88 /* Foundation.framework */,
+				18F23C7A1A397A350053AE88 /* Security.framework */,
+				18F23C781A397A2A0053AE88 /* CoreTelephony.framework */,
+				18F23C761A397A1A0053AE88 /* QuartzCore.framework */,
+				18F23C741A397A010053AE88 /* GLKit.framework */,
+				18F23C721A3979C10053AE88 /* CoreGraphics.framework */,
+				18F23C701A3979B30053AE88 /* OpenGLES.framework */,
+				18F23C6E1A3979A80053AE88 /* OpenAL.framework */,
+				AA60794B027386614AF57C6B /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1849FBFA1A382ACF008C71B4 /* MiWiFi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1849FC1E1A382ACF008C71B4 /* Build configuration list for PBXNativeTarget "MiWiFi" */;
+			buildPhases = (
+				7DCD87BACE1E8C98D63ED76C /* Check Pods Manifest.lock */,
+				1849FBF71A382ACF008C71B4 /* Sources */,
+				1849FBF81A382ACF008C71B4 /* Frameworks */,
+				1849FBF91A382ACF008C71B4 /* Resources */,
+				6BE4EE70AA95111D5C987A8E /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MiWiFi;
+			productName = MiWiFi;
+			productReference = 1849FBFB1A382ACF008C71B4 /* MiWiFi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1849FC131A382ACF008C71B4 /* MiWiFiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1849FC211A382ACF008C71B4 /* Build configuration list for PBXNativeTarget "MiWiFiTests" */;
+			buildPhases = (
+				1849FC101A382ACF008C71B4 /* Sources */,
+				1849FC111A382ACF008C71B4 /* Frameworks */,
+				1849FC121A382ACF008C71B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1849FC161A382ACF008C71B4 /* PBXTargetDependency */,
+			);
+			name = MiWiFiTests;
+			productName = MiWiFiTests;
+			productReference = 1849FC141A382ACF008C71B4 /* MiWiFiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1849FBF31A382ACF008C71B4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Huang Zhe";
+				TargetAttributes = {
+					1849FBFA1A382ACF008C71B4 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					1849FC131A382ACF008C71B4 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 1849FBFA1A382ACF008C71B4;
+					};
+				};
+			};
+			buildConfigurationList = 1849FBF61A382ACF008C71B4 /* Build configuration list for PBXProject "MiWiFi" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1849FBF21A382ACF008C71B4;
+			productRefGroup = 1849FBFC1A382ACF008C71B4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1849FBFA1A382ACF008C71B4 /* MiWiFi */,
+				1849FC131A382ACF008C71B4 /* MiWiFiTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1849FBF91A382ACF008C71B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1849FC341A3845C8008C71B4 /* avatar.png in Resources */,
+				1849FC0A1A382ACF008C71B4 /* Main.storyboard in Resources */,
+				1849FC0F1A382ACF008C71B4 /* LaunchScreen.xib in Resources */,
+				1849FC0C1A382ACF008C71B4 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1849FC121A382ACF008C71B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6BE4EE70AA95111D5C987A8E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7DCD87BACE1E8C98D63ED76C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1849FBF71A382ACF008C71B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B130571A3EB47900EC6693 /* MASViewConstraint.m in Sources */,
+				1849FC311A383748008C71B4 /* DEMONavigationController.m in Sources */,
+				184B4FFD1A455F1E00974BE9 /* TWCoreDataHelper.m in Sources */,
+				18B130561A3EB47900EC6693 /* MASViewAttribute.m in Sources */,
+				1849FC041A382ACF008C71B4 /* AppDelegate.m in Sources */,
+				1849FC011A382ACF008C71B4 /* main.m in Sources */,
+				184B500A1A45682A00974BE9 /* TWPhotosCollectionViewController.m in Sources */,
+				18B130521A3EB47900EC6693 /* MASCompositeConstraint.m in Sources */,
+				18B130541A3EB47900EC6693 /* MASConstraintMaker.m in Sources */,
+				184B500D1A45687300974BE9 /* TWPhotoDetailViewController.m in Sources */,
+				18B1305A1A3EB47900EC6693 /* View+MASAdditions.m in Sources */,
+				18B130551A3EB47900EC6693 /* MASLayoutConstraint.m in Sources */,
+				1891B6311A4026E600040E8E /* Reachability.m in Sources */,
+				18B130531A3EB47900EC6693 /* MASConstraint.m in Sources */,
+				184B50041A45603A00974BE9 /* Photo.m in Sources */,
+				18B130381A3EB3AE00EC6693 /* TimeLineViewControl.m in Sources */,
+				1849FC321A383748008C71B4 /* DEMOSecondViewController.m in Sources */,
+				184B4FF61A455EC700974BE9 /* AddPhotoViewController.m in Sources */,
+				184B50011A455F3000974BE9 /* MiWiFi.xcdatamodeld in Sources */,
+				184B4FF71A455EC700974BE9 /* ViewController.m in Sources */,
+				18B130581A3EB47900EC6693 /* NSArray+MASAdditions.m in Sources */,
+				18B130591A3EB47900EC6693 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				1849FC301A383748008C71B4 /* DEMOMenuViewController.m in Sources */,
+				184B4FFE1A455F1E00974BE9 /* TWPictureDataTransformer.m in Sources */,
+				18A45EB21A3A7C6100955141 /* SAMultisectorViewController.m in Sources */,
+				184B50091A45682A00974BE9 /* TWPhotoCollectionViewCell.m in Sources */,
+				1849FC2E1A383748008C71B4 /* DEMORootViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1849FC101A382ACF008C71B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1849FC1B1A382ACF008C71B4 /* MiWiFiTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1849FC161A382ACF008C71B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1849FBFA1A382ACF008C71B4 /* MiWiFi */;
+			targetProxy = 1849FC151A382ACF008C71B4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1849FC081A382ACF008C71B4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1849FC091A382ACF008C71B4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1849FC0D1A382ACF008C71B4 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1849FC0E1A382ACF008C71B4 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1849FC1C1A382ACF008C71B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1849FC1D1A382ACF008C71B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1849FC1F1A382ACF008C71B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EA46D8A3730F16BC9564BFA /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MiWiFi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1849FC201A382ACF008C71B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FB9841AA49D5CB2B0495D35 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MiWiFi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1849FC221A382ACF008C71B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MiWiFiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MiWiFi.app/MiWiFi";
+			};
+			name = Debug;
+		};
+		1849FC231A382ACF008C71B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MiWiFiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MiWiFi.app/MiWiFi";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1849FBF61A382ACF008C71B4 /* Build configuration list for PBXProject "MiWiFi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1849FC1C1A382ACF008C71B4 /* Debug */,
+				1849FC1D1A382ACF008C71B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1849FC1E1A382ACF008C71B4 /* Build configuration list for PBXNativeTarget "MiWiFi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1849FC1F1A382ACF008C71B4 /* Debug */,
+				1849FC201A382ACF008C71B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1849FC211A382ACF008C71B4 /* Build configuration list for PBXNativeTarget "MiWiFiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1849FC221A382ACF008C71B4 /* Debug */,
+				1849FC231A382ACF008C71B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		184B4FFF1A455F3000974BE9 /* MiWiFi.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				184B50001A455F3000974BE9 /* MiWiFi.xcdatamodel */,
+			);
+			currentVersion = 184B50001A455F3000974BE9 /* MiWiFi.xcdatamodel */;
+			path = MiWiFi.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1849FBF31A382ACF008C71B4 /* Project object */;
+}

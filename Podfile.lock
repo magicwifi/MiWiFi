@@ -1,0 +1,45 @@
+PODS:
+  - AFNetworking (2.5.0):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+    - AFNetworking/UIKit
+  - AFNetworking/NSURLConnection (2.5.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.5.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.5.0)
+  - AFNetworking/Security (2.5.0)
+  - AFNetworking/Serialization (2.5.0)
+  - AFNetworking/UIKit (2.5.0):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - FlatUIKit (1.5)
+  - HexColors (2.2.1)
+  - PBFlatUI (1.1.0)
+  - REFrostedViewController (2.4.7)
+  - TSMessages (0.9.11):
+    - HexColors
+
+DEPENDENCIES:
+  - AFNetworking (~> 2.0)
+  - FlatUIKit
+  - PBFlatUI (~> 1.1.0)
+  - REFrostedViewController (~> 2.4.7)
+  - TSMessages
+
+SPEC CHECKSUMS:
+  AFNetworking: 0f54cb5d16ce38c1b76948faffb8d5fb705021c7
+  FlatUIKit: 5452fa3fca41e6f04014cca6e81b4c2f961f623c
+  HexColors: 01384d2bbe8dc4ffa43c3b4135db6e976952d153
+  PBFlatUI: c5b83184df1ea5567c23cce0f2e36708e8e1638f
+  REFrostedViewController: 08870a24788191339608b80b2bd4fce549858f0d
+  TSMessages: e21ef5b1c7518cc590a4826c8b05b16b79b10c2c
+
+COCOAPODS: 0.34.2

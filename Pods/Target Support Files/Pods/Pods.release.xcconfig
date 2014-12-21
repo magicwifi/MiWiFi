@@ -1,0 +1,5 @@
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/FlatUIKit" "${PODS_ROOT}/Headers/Public/HexColors" "${PODS_ROOT}/Headers/Public/PBFlatUI" "${PODS_ROOT}/Headers/Public/REFrostedViewController" "${PODS_ROOT}/Headers/Public/TSMessages" $(PODS_ROOT)/../../PBFlatUI/**
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/AFNetworking" -isystem "${PODS_ROOT}/Headers/Public/FlatUIKit" -isystem "${PODS_ROOT}/Headers/Public/HexColors" -isystem "${PODS_ROOT}/Headers/Public/PBFlatUI" -isystem "${PODS_ROOT}/Headers/Public/REFrostedViewController" -isystem "${PODS_ROOT}/Headers/Public/TSMessages"
+OTHER_LDFLAGS = -ObjC -l"Pods-AFNetworking" -l"Pods-FlatUIKit" -l"Pods-HexColors" -l"Pods-PBFlatUI" -l"Pods-REFrostedViewController" -l"Pods-TSMessages" -framework "Accelerate" -framework "CoreGraphics" -framework "CoreText" -framework "MobileCoreServices" -framework "QuartzCore" -framework "Security" -framework "SystemConfiguration"
+PODS_ROOT = ${SRCROOT}/Pods
