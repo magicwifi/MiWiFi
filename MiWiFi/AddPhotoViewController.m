@@ -8,12 +8,15 @@
 
 #import "AddPhotoViewController.h"
 #import "FUITextField.h"
+#import "ViewController.h"
 #import  "Photo.h"
 #import  "TWCoreDataHelper.h"
 #import "FUIButton.h"
 #import "UIColor+FlatUI.h"
 #import "UIFont+FlatUI.h"
+#import "UINavigationBar+FlatUI.h"
 
+#import "UIBarButtonItem+FlatUI.h"
 
 #import <MobileCoreServices/MobileCoreServices.h>
 
@@ -25,6 +28,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 
+@property (weak, nonatomic) IBOutlet UILabel *subtitleLabel;
 @property (nonatomic,strong) UIImage *image;
 @property (strong,readwrite) Photo *addedPhoto;
 @property (weak, nonatomic) IBOutlet FUIButton *takePhotoButton;
@@ -47,13 +51,11 @@
     self.imageView.image = image;
     
 }
-- (IBAction)cancel {
+
+-(void)cancel{
     self.image =nil;
-    [self.presentingViewController dismissViewControllerAnimated:YES completion:NULL];
+    [self.navigationController popViewControllerAnimated:YES];
 }
-
-
-
 
 
 
@@ -74,7 +76,11 @@
     [super viewDidLoad];
     
     self.titleLabel.font = [UIFont flatFontOfSize:20];
-    self.titleLabel.textColor = [UIColor wisteriaColor];
+    self.titleLabel.textColor = [UIColor turquoiseColor];
+    
+    self.subtitleLabel.font = [UIFont flatFontOfSize:20];
+    self.subtitleLabel.textColor = [UIColor turquoiseColor];
+    
     //self.image = [UIImage imageNamed:@"flower.jpg"];
     
     
@@ -90,8 +96,40 @@
 
  
     
+    NSDictionary *attrs = @{NSForegroundColorAttributeName: [UIColor whiteColor]};
+    [[UIBarItem appearance] setTitleTextAttributes:attrs
+                                          forState:UIControlStateNormal];
+    [UIBarButtonItem configureFlatButtonsWithColor:[UIColor peterRiverColor]
+                                  highlightedColor:[UIColor belizeHoleColor]
+                                      cornerRadius:3
+                                   whenContainedIn:[UINavigationBar class], nil];
+    
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"取消"
+                                                                              style:UIBarButtonItemStylePlain
+                                                                             target:self
+                                                                             action:@selector(cancel)];
+    [self.navigationItem.rightBarButtonItem removeTitleShadow];
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"保存"
+                                                                             style:UIBarButtonItemStylePlain
+                                                                            target:self
+                                                                            action:@selector(done)];
+    
+    [self.navigationItem.rightBarButtonItem setTitleTextAttributes:attrs forState:UIControlStateNormal];
+    [self.navigationItem.leftBarButtonItem setTitleTextAttributes:attrs forState:UIControlStateNormal];
+    
+    [self.navigationItem.leftBarButtonItem removeTitleShadow];
+    
+    [self.navigationItem.leftBarButtonItem configureFlatButtonWithColor:[UIColor alizarinColor]
+                                                       highlightedColor:[UIColor pomegranateColor]
+                                                           cornerRadius:3];
+     
     
     
+    self.navigationController.navigationBar.titleTextAttributes = @{NSFontAttributeName:[UIFont boldFlatFontOfSize:18],
+                                                                        NSForegroundColorAttributeName: [UIColor whiteColor]};
+    
+    [self.navigationController.navigationBar configureFlatNavigationBarWithColor:[UIColor midnightBlueColor]];
     
     
     self.view.backgroundColor = [UIColor colorWithRed:26.0/255.0 green:26.0/255.0 blue:26.0/255.0 alpha:1.0];
@@ -122,8 +160,6 @@
 
 
 
-
-
 -(BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender{
     
     if ([identifier isEqualToString:UNWINED_SEGUE_IDENTIFIER]) {
@@ -145,6 +181,24 @@
     }
     
     
+}
+
+-(void)done{
+    
+    if (!self.image) {
+        [self alert:@"NO Photo Taken"];
+    }else if(![self.titleTextField.text length]){
+        [self alert:ALERT_ADD_TITLE];
+
+    }else{
+        
+        [self photoFromImage:self.image];
+        //self.addedPhoto = photo;
+        [self.navigationController popViewControllerAnimated:YES];
+    }
+
+    
+
 }
 
 

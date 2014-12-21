@@ -14,7 +14,8 @@
 #import "FUIButton.h"
 #import "UIFont+FlatUI.h"
 #import "FUIAlertView.h"
-#import "UIPopoverController+FlatUI.h"
+
+#import "UINavigationBar+FlatUI.h"
 
 @interface ViewController ()<FUIAlertViewDelegate>
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
@@ -42,9 +43,15 @@
     [self.alertViewButton setTitleColor:[UIColor cloudsColor] forState:UIControlStateHighlighted];
     
     
-    if (!self.image) {
-        [self readNSUserDefaults];
-    }
+    
+    self.navigationController.navigationBar.titleTextAttributes = @{NSFontAttributeName:[UIFont boldFlatFontOfSize:18],
+                                                                    NSForegroundColorAttributeName: [UIColor whiteColor]};
+    
+    [self.navigationController.navigationBar configureFlatNavigationBarWithColor:[UIColor midnightBlueColor]];
+    
+    
+    [self readNSUserDefaults];
+    
 
  
     
@@ -134,6 +141,13 @@
     self.image = photo.image;
     self.title = photo.name;
     
+}
+
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    
+    self.image =nil;
+
 }
 
 
