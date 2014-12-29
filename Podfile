@@ -4,3 +4,4 @@ pod 'PBFlatUI', '~> 1.1.0'
 pod "TSMessages"
 pod "AFNetworking", "~> 2.0"
 pod 'FlatUIKit'
+pod 'PNChart'

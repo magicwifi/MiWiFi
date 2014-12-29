@@ -23,14 +23,18 @@ PODS:
   - FlatUIKit (1.5)
   - HexColors (2.2.1)
   - PBFlatUI (1.1.0)
+  - PNChart (0.5.5):
+    - UICountingLabel (~> 1.0.0)
   - REFrostedViewController (2.4.7)
   - TSMessages (0.9.11):
     - HexColors
+  - UICountingLabel (1.0.0)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.0)
   - FlatUIKit
   - PBFlatUI (~> 1.1.0)
+  - PNChart
   - REFrostedViewController (~> 2.4.7)
   - TSMessages
 
@@ -39,7 +43,9 @@ SPEC CHECKSUMS:
   FlatUIKit: 5452fa3fca41e6f04014cca6e81b4c2f961f623c
   HexColors: 01384d2bbe8dc4ffa43c3b4135db6e976952d153
   PBFlatUI: c5b83184df1ea5567c23cce0f2e36708e8e1638f
+  PNChart: 91d23a0776f5adb3694e6666ac19c458e327a6d0
   REFrostedViewController: 08870a24788191339608b80b2bd4fce549858f0d
   TSMessages: e21ef5b1c7518cc590a4826c8b05b16b79b10c2c
+  UICountingLabel: 0a0e9e34bf4690dbd127aaec552d19ed938087a9
 
 COCOAPODS: 0.34.2

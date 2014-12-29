@@ -24,12 +24,22 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-PNChart.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-REFrostedViewController.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>Pods-TSMessages.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-UICountingLabel.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -42,37 +52,47 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0844834B79341F8A5F6887EA</key>
+		<key>097A4536384F212053B3A35E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>0E758B44FE9CB169A956E228</key>
+		<key>11D7CD833644D04A6F3536B9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>52DAB6CD176E33018CF26496</key>
+		<key>1C53468D4E5774862A33938A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>656BE45279983D3DC3D20A4D</key>
+		<key>526B010D78E91ECEB510D5C5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8CCB7360C7430CE7A4CF581B</key>
+		<key>7747FC6298A6B2E5EF8BB082</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8E3C18A2824B03EC15B0D568</key>
+		<key>8BA29C6CAB1046DFEBCAA501</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CA9C7F4A53C8FAAF693EEC97</key>
+		<key>ACF0101C4241F2454C087AAB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C103FFB95C4A15F4FCB06ADB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FE48BF0997FFCD7883B427DF</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -1,5 +1,5 @@
 #include "Pods-TSMessages.xcconfig"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Build" "${PODS_ROOT}/Headers/Build/TSMessages" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/FlatUIKit" "${PODS_ROOT}/Headers/Public/HexColors" "${PODS_ROOT}/Headers/Public/PBFlatUI" "${PODS_ROOT}/Headers/Public/REFrostedViewController" "${PODS_ROOT}/Headers/Public/TSMessages"
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Build" "${PODS_ROOT}/Headers/Build/TSMessages" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/FlatUIKit" "${PODS_ROOT}/Headers/Public/HexColors" "${PODS_ROOT}/Headers/Public/PBFlatUI" "${PODS_ROOT}/Headers/Public/PNChart" "${PODS_ROOT}/Headers/Public/REFrostedViewController" "${PODS_ROOT}/Headers/Public/TSMessages" "${PODS_ROOT}/Headers/Public/UICountingLabel"
 OTHER_LDFLAGS = -ObjC
 PODS_ROOT = ${SRCROOT}

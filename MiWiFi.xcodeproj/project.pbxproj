@@ -12,11 +12,10 @@
 		18242D301A47C38F005EBD3A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F23C7C1A397A620053AE88 /* Foundation.framework */; };
 		18242D311A47C3AE005EBD3A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F23C721A3979C10053AE88 /* CoreGraphics.framework */; };
 		183A8A441A4D53D10022C181 /* LocalWifiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 183A8A431A4D53D10022C181 /* LocalWifiManager.m */; };
+		183F10D71A5189B3004824EE /* AnanlysisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183F10D61A5189B3004824EE /* AnanlysisViewController.m */; };
 		1849FC011A382ACF008C71B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1849FC001A382ACF008C71B4 /* main.m */; };
 		1849FC041A382ACF008C71B4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1849FC031A382ACF008C71B4 /* AppDelegate.m */; };
 		1849FC0A1A382ACF008C71B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1849FC081A382ACF008C71B4 /* Main.storyboard */; };
-		1849FC0C1A382ACF008C71B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1849FC0B1A382ACF008C71B4 /* Images.xcassets */; };
-		1849FC0F1A382ACF008C71B4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1849FC0D1A382ACF008C71B4 /* LaunchScreen.xib */; };
 		1849FC1B1A382ACF008C71B4 /* MiWiFiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1849FC1A1A382ACF008C71B4 /* MiWiFiTests.m */; };
 		1849FC2E1A383748008C71B4 /* DEMORootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1849FC251A383748008C71B4 /* DEMORootViewController.m */; };
 		1849FC311A383748008C71B4 /* DEMONavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1849FC2B1A383748008C71B4 /* DEMONavigationController.m */; };
@@ -28,6 +27,7 @@
 		184B500A1A45682A00974BE9 /* TWPhotosCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184B50081A45682A00974BE9 /* TWPhotosCollectionViewController.m */; };
 		187638391A51292000E01824 /* router.png in Resources */ = {isa = PBXBuildFile; fileRef = 187638381A51292000E01824 /* router.png */; };
 		1876383B1A5141B100E01824 /* DEMOMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1876383A1A5141B100E01824 /* DEMOMenuViewController.m */; };
+		187638401A514E7C00E01824 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1876383F1A514E7C00E01824 /* Images.xcassets */; };
 		1891B62E1A4026D500040E8E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F23C7E1A397A810053AE88 /* SystemConfiguration.framework */; };
 		18949F3E1A47DF1000C5C89B /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18949F3D1A47DF1000C5C89B /* ImageViewController.m */; };
 		189E24D21A46B5B3001BAF90 /* RouterWifi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 189E24D01A46B5B3001BAF90 /* RouterWifi.xcdatamodeld */; };
@@ -61,14 +61,14 @@
 		181BE6501A4AA6BE004B5A84 /* DEMOSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEMOSecondViewController.m; sourceTree = "<group>"; };
 		183A8A421A4D53D10022C181 /* LocalWifiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalWifiManager.h; sourceTree = "<group>"; };
 		183A8A431A4D53D10022C181 /* LocalWifiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalWifiManager.m; sourceTree = "<group>"; };
+		183F10D51A5189B3004824EE /* AnanlysisViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnanlysisViewController.h; sourceTree = "<group>"; };
+		183F10D61A5189B3004824EE /* AnanlysisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnanlysisViewController.m; sourceTree = "<group>"; };
 		1849FBFB1A382ACF008C71B4 /* MiWiFi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiWiFi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1849FBFF1A382ACF008C71B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1849FC001A382ACF008C71B4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1849FC021A382ACF008C71B4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1849FC031A382ACF008C71B4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1849FC091A382ACF008C71B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1849FC0B1A382ACF008C71B4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		1849FC0E1A382ACF008C71B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		1849FC141A382ACF008C71B4 /* MiWiFiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiWiFiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1849FC191A382ACF008C71B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1849FC1A1A382ACF008C71B4 /* MiWiFiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MiWiFiTests.m; sourceTree = "<group>"; };
@@ -92,6 +92,7 @@
 		186B31FA1A4D8E45002BECEE /* MiWiFi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = MiWiFi.entitlements; sourceTree = "<group>"; };
 		187638381A51292000E01824 /* router.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = router.png; sourceTree = "<group>"; };
 		1876383A1A5141B100E01824 /* DEMOMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEMOMenuViewController.m; sourceTree = "<group>"; };
+		1876383F1A514E7C00E01824 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		18949F3C1A47DF1000C5C89B /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
 		18949F3D1A47DF1000C5C89B /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
 		189E24D11A46B5B3001BAF90 /* RouterWifi.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RouterWifi.xcdatamodel; sourceTree = "<group>"; };
@@ -185,6 +186,7 @@
 		1849FBFD1A382ACF008C71B4 /* MiWiFi */ = {
 			isa = PBXGroup;
 			children = (
+				1876383F1A514E7C00E01824 /* Images.xcassets */,
 				186B31FA1A4D8E45002BECEE /* MiWiFi.entitlements */,
 				184B50051A45682A00974BE9 /* TWPhotoCollectionViewCell.h */,
 				184B50061A45682A00974BE9 /* TWPhotoCollectionViewCell.m */,
@@ -212,11 +214,11 @@
 				1849FC081A382ACF008C71B4 /* Main.storyboard */,
 				18949F3C1A47DF1000C5C89B /* ImageViewController.h */,
 				18949F3D1A47DF1000C5C89B /* ImageViewController.m */,
-				1849FC0B1A382ACF008C71B4 /* Images.xcassets */,
 				187638381A51292000E01824 /* router.png */,
 				1849FC331A3845C8008C71B4 /* avatar.png */,
-				1849FC0D1A382ACF008C71B4 /* LaunchScreen.xib */,
 				1849FBFE1A382ACF008C71B4 /* Supporting Files */,
+				183F10D51A5189B3004824EE /* AnanlysisViewController.h */,
+				183F10D61A5189B3004824EE /* AnanlysisViewController.m */,
 			);
 			path = MiWiFi;
 			sourceTree = "<group>";
@@ -429,10 +431,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				187638391A51292000E01824 /* router.png in Resources */,
+				187638401A514E7C00E01824 /* Images.xcassets in Resources */,
 				1849FC341A3845C8008C71B4 /* avatar.png in Resources */,
 				1849FC0A1A382ACF008C71B4 /* Main.storyboard in Resources */,
-				1849FC0F1A382ACF008C71B4 /* LaunchScreen.xib in Resources */,
-				1849FC0C1A382ACF008C71B4 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,6 +510,7 @@
 				18A45EB21A3A7C6100955141 /* SAMultisectorViewController.m in Sources */,
 				184B50091A45682A00974BE9 /* TWPhotoCollectionViewCell.m in Sources */,
 				1849FC2E1A383748008C71B4 /* DEMORootViewController.m in Sources */,
+				183F10D71A5189B3004824EE /* AnanlysisViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -539,14 +541,6 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		1849FC0D1A382ACF008C71B4 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1849FC0E1A382ACF008C71B4 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -554,6 +548,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -595,6 +591,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -631,6 +629,7 @@
 			baseConfigurationReference = 8EA46D8A3730F16BC9564BFA /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MiWiFi/Info.plist;
@@ -649,6 +648,7 @@
 			baseConfigurationReference = 7FB9841AA49D5CB2B0495D35 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MiWiFi/Info.plist;

@@ -13,6 +13,7 @@
 #import "UIViewController+REFrostedViewController.h"
 #import "DEMONavigationController.h"
 #import "TWPhotosCollectionViewController.h"
+#import "AnanlysisViewController.h"
 
 @interface DEMOMenuViewController ()
 
@@ -110,8 +111,8 @@
         }
     else if (indexPath.section == 0 && indexPath.row == 2) {
         
-        DEMOSecondViewController *secondViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"secondController"];
-        navigationController.viewControllers = @[secondViewController];
+        AnanlysisViewController *ananlysisViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"ananlysisViewController"];
+        navigationController.viewControllers = @[ananlysisViewController];
         
     }
     
