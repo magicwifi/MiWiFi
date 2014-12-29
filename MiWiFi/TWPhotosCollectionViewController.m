@@ -9,14 +9,15 @@
 #import "TWPhotosCollectionViewController.h"
 #import "TWPhotoCollectionViewCell.h"
 #import "Photo.h"
-#import "TWPictureDataTransformer.h"
 #import "TWCoreDataHelper.h"
-#import "TWPhotoDetailViewController.h"
+#import "ImageViewController.h"
 
 
 @interface TWPhotosCollectionViewController () <UIImagePickerControllerDelegate,UINavigationControllerDelegate>
 
 @property (strong, nonatomic) NSMutableArray *photos; // Of UIImages
+//@property (strong, nonatomic) NSURL *imageurl;
+
 
 @end
 
@@ -75,22 +76,7 @@
 }
 
 
--(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    /* Confirm that the correct segue is being triggered */
-    if ([segue.identifier isEqualToString:@"Detail Segue"])
-    {
-        /* Confirm that the correct View Controller is being transitioned to */
-        if ([segue.destinationViewController isKindOfClass:[TWPhotoDetailViewController class]]){
-            
-            TWPhotoDetailViewController *targetViewController = segue.destinationViewController;
-            NSIndexPath *indexPath = [[self.collectionView indexPathsForSelectedItems] lastObject];
-            /* Access the photo that was tapped and set the property of the target ViewController */
-            Photo *selectedPhoto = self.photos[indexPath.row];
-            targetViewController.photo = selectedPhoto;
-        }
-    }
-}
+
 
 #pragma mark - UICollectionViewDataSource
 
@@ -104,7 +90,11 @@
     /* Access the correct photo from the photo's array */
     Photo *photo = self.photos[indexPath.row];
     cell.backgroundColor = [UIColor whiteColor];
-    cell.imageView.image = photo.image;
+    cell.imageurl = [NSURL URLWithString:photo.imageurl ];
+    //cell.imageView.image = photo.image;
+    
+ 
+    
     
     return cell;
 }
@@ -135,12 +125,58 @@
     
 }
 
+
+
+
+- (NSURL *)uniqueDocumentURL
+{
+    NSArray *documentDirectories = [[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask];
+    NSString *unique = [NSString stringWithFormat:@"%.0f", floor([NSDate timeIntervalSinceReferenceDate])];
+ 
+    return [[documentDirectories firstObject] URLByAppendingPathComponent:unique];
+  
+}
+/*
+-(NSURL *)imageurl{
+    
+    if (!_imageurl && self.image) {
+        NSURL *url = [self uniqueDocumentURL];
+        if (url) {
+            NSData *imageData = UIImageJPEGRepresentation(self.image, 1.0);
+            if ([imageData writeToURL:url atomically:YES]) {
+                _imageurl = url;
+                NSLog(@"imageurl %@",_imageurl);
+            }
+        }
+    }
+    
+    NSLog(@"imageurl NO");
+    return _imageurl;
+
+}
+*/
+
+
+
+
 - (Photo *)photoFromImage:(UIImage *)image
 {
     /* Create a photo object using the method insertNewObjectForEntityForName for the entity name Photo */
     Photo *photo = [NSEntityDescription insertNewObjectForEntityForName:@"Photo" inManagedObjectContext:[TWCoreDataHelper managedObjectContext]];
     /* Set the photo's attributes */
-    photo.image = image;
+    //photo.image = image;
+   
+    NSURL *url = [self uniqueDocumentURL];
+    if (url) {
+        NSData *imageData = UIImageJPEGRepresentation(image, 0.1);
+        if ([imageData writeToURL:url atomically:YES]) {
+            photo.imageurl = [url absoluteString];
+            
+        }
+    }
+    
+    //NSLog(@"%@",[self.imageurl absoluteString]);
+
     photo.date = [NSDate date];
     //photo.albumBook = self.album;
     photo.name = @"Portal";
@@ -158,9 +194,15 @@
     UIImage *image = info[UIImagePickerControllerEditedImage];
     if(!image) image = info[UIImagePickerControllerOriginalImage];
     
+ 
+
+    
+    
     [self.photos addObject:[self photoFromImage:image]];
     
     [self.collectionView reloadData];
+  
+    //self.image = nil;
     
     [self dismissViewControllerAnimated:YES completion:nil];
 }
@@ -169,6 +211,26 @@
 -(void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
 {
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    /* Confirm that the correct segue is being triggered */
+    if ([segue.identifier isEqualToString:@"Detail Segue"])
+    {
+        /* Confirm that the correct View Controller is being transitioned to */
+        if ([segue.destinationViewController isKindOfClass:[ImageViewController class]]){
+            
+            ImageViewController *targetViewController = segue.destinationViewController;
+            NSIndexPath *indexPath = [[self.collectionView indexPathsForSelectedItems] lastObject];
+            /* Access the photo that was tapped and set the property of the target ViewController */
+            Photo *selectedPhoto = self.photos[indexPath.row];
+            targetViewController.imageurl = [NSURL URLWithString:selectedPhoto.imageurl ];
+            targetViewController.title = selectedPhoto.name;
+            
+        }
+    }
 }
 
 

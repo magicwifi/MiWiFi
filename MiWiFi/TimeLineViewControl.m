@@ -370,4 +370,12 @@ const float VIEW_WIDTH = 225.0;
     [super updateConstraints];
 }
 
+
+-(void)updateStatue:(int)status{
+    
+     [self addProgressBasedOnLabels:self.labelDscriptionsArray currentStatus:status];
+
+}
+
+
 @end

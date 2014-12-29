@@ -33,7 +33,7 @@
         UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 0, 184.0f)];
         UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 40, 100, 100)];
         imageView.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
-        imageView.image = [UIImage imageNamed:@"avatar.jpg"];
+        imageView.image = [UIImage imageNamed:@"router.png"];
         imageView.layer.masksToBounds = YES;
         imageView.layer.cornerRadius = 50.0;
         imageView.layer.borderColor = [UIColor whiteColor].CGColor;
@@ -43,7 +43,7 @@
         imageView.clipsToBounds = YES;
         
         UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 150, 0, 24)];
-        label.text = @"Roman Efimov";
+        label.text = @"AWiFi 智能路由";
         label.font = [UIFont fontWithName:@"HelveticaNeue" size:21];
         label.backgroundColor = [UIColor clearColor];
         label.textColor = [UIColor colorWithRed:62/255.0f green:68/255.0f blue:75/255.0f alpha:1.0f];
@@ -75,7 +75,7 @@
     view.backgroundColor = [UIColor colorWithRed:167/255.0f green:167/255.0f blue:167/255.0f alpha:0.6f];
     
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(10, 8, 0, 0)];
-    label.text = @"Friends Online";
+    label.text = @"业务使用";
     label.font = [UIFont systemFontOfSize:15];
     label.textColor = [UIColor whiteColor];
     label.backgroundColor = [UIColor clearColor];
@@ -99,22 +99,36 @@
     DEMONavigationController *navigationController = [self.storyboard instantiateViewControllerWithIdentifier:@"contentController"];
     
     if (indexPath.section == 0 && indexPath.row == 0) {
+        
         SAMultisectorViewController  *samViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"homeController"];
         navigationController.viewControllers = @[samViewController];
     }
     else if (indexPath.section == 0 && indexPath.row == 1) {
+        DEMOSecondViewController *secondViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"secondController"];
+        navigationController.viewControllers = @[secondViewController];
+        
+        }
+    else if (indexPath.section == 0 && indexPath.row == 2) {
+        
+        DEMOSecondViewController *secondViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"secondController"];
+        navigationController.viewControllers = @[secondViewController];
+        
+    }
+    
+    else if (indexPath.section == 1 && indexPath.row == 0) {
         ViewController  *cameraController = [self.storyboard instantiateViewControllerWithIdentifier:@"cameraController"];
         navigationController.viewControllers = @[cameraController];
+        
+      
     }
-    
-    else if (indexPath.section == 0 && indexPath.row == 2) {
+    else if (indexPath.section == 1 && indexPath.row == 1) {
+        
         TWPhotosCollectionViewController  *collectionViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"collectionViewController"];
         navigationController.viewControllers = @[collectionViewController];
+    
     }
-    
-
-    
     else {
+        
         DEMOSecondViewController *secondViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"secondController"];
         navigationController.viewControllers = @[secondViewController];
     }
@@ -152,10 +166,10 @@
     }
     
     if (indexPath.section == 0) {
-        NSArray *titles = @[@"Home", @"Profile", @"Chats"];
+        NSArray *titles = @[@"智能路由", @"上网配置", @"访客记录"];
         cell.textLabel.text = titles[indexPath.row];
     } else {
-        NSArray *titles = @[@"John Appleseed", @"John Doe", @"Test User"];
+        NSArray *titles = @[@"拍摄广告", @"选择广告", @"内容推荐"];
         cell.textLabel.text = titles[indexPath.row];
     }
     

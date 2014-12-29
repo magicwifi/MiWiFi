@@ -7,13 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "REFrostedViewController.h"
-#import "PBFlatTextfield.h"
-#import "PBFlatButtonWithIcon.h"
 
 @interface DEMOSecondViewController : UIViewController<UITextFieldDelegate>
 
-- (IBAction)showMenu;
 
 
 

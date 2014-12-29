@@ -14,15 +14,13 @@
 
 
 
-- (IBAction)showmenu:(id)sender;
 
 
 
-@property (weak, nonatomic) IBOutlet UILabel *priceStartLable;
 @property (weak, nonatomic) IBOutlet UILabel *priceEndLable;
-@property (weak, nonatomic) IBOutlet UILabel *distanceStartLable;
+
 @property (weak, nonatomic) IBOutlet UILabel *distanceEndLable;
-@property (weak, nonatomic) IBOutlet UILabel *waitStartLable;
+
 @property (weak, nonatomic) IBOutlet UILabel *waitEndLable;
 
 @end

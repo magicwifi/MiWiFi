@@ -2,7 +2,7 @@
 //  Photo.m
 //  MiWiFi
 //
-//  Created by Huang Zhe on 14-12-20.
+//  Created by Huang Zhe on 14-12-21.
 //  Copyright (c) 2014年 Huang Zhe. All rights reserved.
 //
 
@@ -11,8 +11,8 @@
 
 @implementation Photo
 
-@dynamic image;
 @dynamic name;
+@dynamic imageurl;
 @dynamic date;
 
 @end

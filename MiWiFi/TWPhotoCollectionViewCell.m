@@ -56,6 +56,41 @@
     
 }
 
+-(void)setImageurl:(NSURL *)imageurl{
+    
+    _imageurl = imageurl;
+    [self startDownloadingImage];
+    
+}
+
+
+- (void)startDownloadingImage
+{
+    //self.image = nil;
+  
+    if (self.imageurl) {
+        
+        NSURLRequest *request = [NSURLRequest requestWithURL:self.imageurl];
+        NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration ephemeralSessionConfiguration];
+        NSURLSession *session = [NSURLSession sessionWithConfiguration:configuration];
+        NSURLSessionDownloadTask *task = [session downloadTaskWithRequest:request
+                                                        completionHandler:^(NSURL *localFile, NSURLResponse *response, NSError *error) {
+                                                            if (!error) {
+                                                                if ([request.URL isEqual:self.imageurl]) {
+                                                                    UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:localFile]];
+                                                                    dispatch_async(dispatch_get_main_queue(), ^{
+                                                                        self.imageView.image = image;
+                                                                 
+                                                                    });
+                                                                    //[self performSelectorOnMainThread:@selector(setImage:) withObject:image waitUntilDone:NO];
+                                                                }
+                                                            }
+                                                        }];
+        [task resume];
+    }
+}
+
+
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.

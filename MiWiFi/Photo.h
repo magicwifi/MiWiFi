@@ -2,7 +2,7 @@
 //  Photo.h
 //  MiWiFi
 //
-//  Created by Huang Zhe on 14-12-20.
+//  Created by Huang Zhe on 14-12-21.
 //  Copyright (c) 2014年 Huang Zhe. All rights reserved.
 //
 
@@ -12,8 +12,8 @@
 
 @interface Photo : NSManagedObject
 
-@property (nonatomic, retain) id image;
 @property (nonatomic, retain) NSString * name;
+@property (nonatomic, retain) NSString * imageurl;
 @property (nonatomic, retain) NSDate * date;
 
 @end

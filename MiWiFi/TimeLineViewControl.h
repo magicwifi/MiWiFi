@@ -16,4 +16,7 @@
 
 - (id)initWithTimeArray:(NSArray *)time andTimeDescriptionArray:(NSArray *)timeDescriptions andCurrentStatus:(int)status andFrame:(CGRect)frame;
 
+-(void)updateStatue:(int)status;
+
+
 @end

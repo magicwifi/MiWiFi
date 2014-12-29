@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		181BE6491A4A9F5E004B5A84 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 181BE6481A4A9F5E004B5A84 /* UIKit.framework */; };
+		181BE6511A4AA6BE004B5A84 /* DEMOSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 181BE6501A4AA6BE004B5A84 /* DEMOSecondViewController.m */; };
+		18242D301A47C38F005EBD3A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F23C7C1A397A620053AE88 /* Foundation.framework */; };
+		18242D311A47C3AE005EBD3A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F23C721A3979C10053AE88 /* CoreGraphics.framework */; };
+		183A8A441A4D53D10022C181 /* LocalWifiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 183A8A431A4D53D10022C181 /* LocalWifiManager.m */; };
 		1849FC011A382ACF008C71B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1849FC001A382ACF008C71B4 /* main.m */; };
 		1849FC041A382ACF008C71B4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1849FC031A382ACF008C71B4 /* AppDelegate.m */; };
 		1849FC0A1A382ACF008C71B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1849FC081A382ACF008C71B4 /* Main.storyboard */; };
@@ -14,21 +19,19 @@
 		1849FC0F1A382ACF008C71B4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1849FC0D1A382ACF008C71B4 /* LaunchScreen.xib */; };
 		1849FC1B1A382ACF008C71B4 /* MiWiFiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1849FC1A1A382ACF008C71B4 /* MiWiFiTests.m */; };
 		1849FC2E1A383748008C71B4 /* DEMORootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1849FC251A383748008C71B4 /* DEMORootViewController.m */; };
-		1849FC301A383748008C71B4 /* DEMOMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1849FC291A383748008C71B4 /* DEMOMenuViewController.m */; };
 		1849FC311A383748008C71B4 /* DEMONavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1849FC2B1A383748008C71B4 /* DEMONavigationController.m */; };
-		1849FC321A383748008C71B4 /* DEMOSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1849FC2D1A383748008C71B4 /* DEMOSecondViewController.m */; };
 		1849FC341A3845C8008C71B4 /* avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 1849FC331A3845C8008C71B4 /* avatar.png */; };
 		184B4FF61A455EC700974BE9 /* AddPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184B4FF31A455EC700974BE9 /* AddPhotoViewController.m */; };
 		184B4FF71A455EC700974BE9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184B4FF51A455EC700974BE9 /* ViewController.m */; };
 		184B4FFD1A455F1E00974BE9 /* TWCoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 184B4FFA1A455F1E00974BE9 /* TWCoreDataHelper.m */; };
-		184B4FFE1A455F1E00974BE9 /* TWPictureDataTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 184B4FFC1A455F1E00974BE9 /* TWPictureDataTransformer.m */; };
-		184B50011A455F3000974BE9 /* MiWiFi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 184B4FFF1A455F3000974BE9 /* MiWiFi.xcdatamodeld */; };
-		184B50041A45603A00974BE9 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 184B50031A45603A00974BE9 /* Photo.m */; };
 		184B50091A45682A00974BE9 /* TWPhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 184B50061A45682A00974BE9 /* TWPhotoCollectionViewCell.m */; };
 		184B500A1A45682A00974BE9 /* TWPhotosCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184B50081A45682A00974BE9 /* TWPhotosCollectionViewController.m */; };
-		184B500D1A45687300974BE9 /* TWPhotoDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184B500C1A45687300974BE9 /* TWPhotoDetailViewController.m */; };
+		187638391A51292000E01824 /* router.png in Resources */ = {isa = PBXBuildFile; fileRef = 187638381A51292000E01824 /* router.png */; };
+		1876383B1A5141B100E01824 /* DEMOMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1876383A1A5141B100E01824 /* DEMOMenuViewController.m */; };
 		1891B62E1A4026D500040E8E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F23C7E1A397A810053AE88 /* SystemConfiguration.framework */; };
-		1891B6311A4026E600040E8E /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 1891B6301A4026E600040E8E /* Reachability.m */; };
+		18949F3E1A47DF1000C5C89B /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18949F3D1A47DF1000C5C89B /* ImageViewController.m */; };
+		189E24D21A46B5B3001BAF90 /* RouterWifi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 189E24D01A46B5B3001BAF90 /* RouterWifi.xcdatamodeld */; };
+		189E24D51A46B609001BAF90 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 189E24D41A46B609001BAF90 /* Photo.m */; };
 		18A45EB21A3A7C6100955141 /* SAMultisectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A45EB11A3A7C6100955141 /* SAMultisectorViewController.m */; };
 		18B130381A3EB3AE00EC6693 /* TimeLineViewControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B130371A3EB3AE00EC6693 /* TimeLineViewControl.m */; };
 		18B130521A3EB47900EC6693 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B1303C1A3EB47900EC6693 /* MASCompositeConstraint.m */; };
@@ -54,6 +57,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		181BE6481A4A9F5E004B5A84 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		181BE6501A4AA6BE004B5A84 /* DEMOSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEMOSecondViewController.m; sourceTree = "<group>"; };
+		183A8A421A4D53D10022C181 /* LocalWifiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalWifiManager.h; sourceTree = "<group>"; };
+		183A8A431A4D53D10022C181 /* LocalWifiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalWifiManager.m; sourceTree = "<group>"; };
 		1849FBFB1A382ACF008C71B4 /* MiWiFi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiWiFi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1849FBFF1A382ACF008C71B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1849FC001A382ACF008C71B4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -68,11 +75,9 @@
 		1849FC241A383748008C71B4 /* DEMORootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEMORootViewController.h; sourceTree = "<group>"; };
 		1849FC251A383748008C71B4 /* DEMORootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEMORootViewController.m; sourceTree = "<group>"; };
 		1849FC281A383748008C71B4 /* DEMOMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEMOMenuViewController.h; sourceTree = "<group>"; };
-		1849FC291A383748008C71B4 /* DEMOMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEMOMenuViewController.m; sourceTree = "<group>"; };
 		1849FC2A1A383748008C71B4 /* DEMONavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEMONavigationController.h; sourceTree = "<group>"; };
 		1849FC2B1A383748008C71B4 /* DEMONavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEMONavigationController.m; sourceTree = "<group>"; };
 		1849FC2C1A383748008C71B4 /* DEMOSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEMOSecondViewController.h; sourceTree = "<group>"; };
-		1849FC2D1A383748008C71B4 /* DEMOSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEMOSecondViewController.m; sourceTree = "<group>"; };
 		1849FC331A3845C8008C71B4 /* avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar.png; sourceTree = "<group>"; };
 		184B4FF21A455EC700974BE9 /* AddPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddPhotoViewController.h; sourceTree = "<group>"; };
 		184B4FF31A455EC700974BE9 /* AddPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddPhotoViewController.m; sourceTree = "<group>"; };
@@ -80,19 +85,18 @@
 		184B4FF51A455EC700974BE9 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		184B4FF91A455F1E00974BE9 /* TWCoreDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWCoreDataHelper.h; sourceTree = "<group>"; };
 		184B4FFA1A455F1E00974BE9 /* TWCoreDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWCoreDataHelper.m; sourceTree = "<group>"; };
-		184B4FFB1A455F1E00974BE9 /* TWPictureDataTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWPictureDataTransformer.h; sourceTree = "<group>"; };
-		184B4FFC1A455F1E00974BE9 /* TWPictureDataTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWPictureDataTransformer.m; sourceTree = "<group>"; };
-		184B50001A455F3000974BE9 /* MiWiFi.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MiWiFi.xcdatamodel; sourceTree = "<group>"; };
-		184B50021A45603A00974BE9 /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Photo.h; path = MiWiFi/Photo.h; sourceTree = "<group>"; };
-		184B50031A45603A00974BE9 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Photo.m; path = MiWiFi/Photo.m; sourceTree = "<group>"; };
 		184B50051A45682A00974BE9 /* TWPhotoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWPhotoCollectionViewCell.h; sourceTree = "<group>"; };
 		184B50061A45682A00974BE9 /* TWPhotoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWPhotoCollectionViewCell.m; sourceTree = "<group>"; };
 		184B50071A45682A00974BE9 /* TWPhotosCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWPhotosCollectionViewController.h; sourceTree = "<group>"; };
 		184B50081A45682A00974BE9 /* TWPhotosCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWPhotosCollectionViewController.m; sourceTree = "<group>"; };
-		184B500B1A45687300974BE9 /* TWPhotoDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWPhotoDetailViewController.h; sourceTree = "<group>"; };
-		184B500C1A45687300974BE9 /* TWPhotoDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWPhotoDetailViewController.m; sourceTree = "<group>"; };
-		1891B62F1A4026E600040E8E /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
-		1891B6301A4026E600040E8E /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		186B31FA1A4D8E45002BECEE /* MiWiFi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = MiWiFi.entitlements; sourceTree = "<group>"; };
+		187638381A51292000E01824 /* router.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = router.png; sourceTree = "<group>"; };
+		1876383A1A5141B100E01824 /* DEMOMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEMOMenuViewController.m; sourceTree = "<group>"; };
+		18949F3C1A47DF1000C5C89B /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
+		18949F3D1A47DF1000C5C89B /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
+		189E24D11A46B5B3001BAF90 /* RouterWifi.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RouterWifi.xcdatamodel; sourceTree = "<group>"; };
+		189E24D31A46B609001BAF90 /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Photo.h; path = MiWiFi/Photo.h; sourceTree = "<group>"; };
+		189E24D41A46B609001BAF90 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Photo.m; path = MiWiFi/Photo.m; sourceTree = "<group>"; };
 		18A45EB01A3A7C6100955141 /* SAMultisectorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMultisectorViewController.h; sourceTree = "<group>"; };
 		18A45EB11A3A7C6100955141 /* SAMultisectorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMultisectorViewController.m; sourceTree = "<group>"; };
 		18B130361A3EB3AE00EC6693 /* TimeLineViewControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeLineViewControl.h; sourceTree = "<group>"; };
@@ -139,6 +143,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				181BE6491A4A9F5E004B5A84 /* UIKit.framework in Frameworks */,
+				18242D311A47C3AE005EBD3A /* CoreGraphics.framework in Frameworks */,
+				18242D301A47C38F005EBD3A /* Foundation.framework in Frameworks */,
 				1891B62E1A4026D500040E8E /* SystemConfiguration.framework in Frameworks */,
 				9879CE88FC798A5BF97FEF2B /* libPods.a in Frameworks */,
 			);
@@ -178,8 +185,7 @@
 		1849FBFD1A382ACF008C71B4 /* MiWiFi */ = {
 			isa = PBXGroup;
 			children = (
-				184B500B1A45687300974BE9 /* TWPhotoDetailViewController.h */,
-				184B500C1A45687300974BE9 /* TWPhotoDetailViewController.m */,
+				186B31FA1A4D8E45002BECEE /* MiWiFi.entitlements */,
 				184B50051A45682A00974BE9 /* TWPhotoCollectionViewCell.h */,
 				184B50061A45682A00974BE9 /* TWPhotoCollectionViewCell.m */,
 				184B50071A45682A00974BE9 /* TWPhotosCollectionViewController.h */,
@@ -188,23 +194,26 @@
 				184B4FF31A455EC700974BE9 /* AddPhotoViewController.m */,
 				184B4FF41A455EC700974BE9 /* ViewController.h */,
 				184B4FF51A455EC700974BE9 /* ViewController.m */,
-				1891B62F1A4026E600040E8E /* Reachability.h */,
-				1891B6301A4026E600040E8E /* Reachability.m */,
 				18B130351A3EB37800EC6693 /* Timeline */,
 				18A45EB01A3A7C6100955141 /* SAMultisectorViewController.h */,
 				18A45EB11A3A7C6100955141 /* SAMultisectorViewController.m */,
+				183A8A421A4D53D10022C181 /* LocalWifiManager.h */,
+				183A8A431A4D53D10022C181 /* LocalWifiManager.m */,
 				1849FC021A382ACF008C71B4 /* AppDelegate.h */,
 				1849FC241A383748008C71B4 /* DEMORootViewController.h */,
+				1876383A1A5141B100E01824 /* DEMOMenuViewController.m */,
 				1849FC251A383748008C71B4 /* DEMORootViewController.m */,
 				1849FC281A383748008C71B4 /* DEMOMenuViewController.h */,
-				1849FC291A383748008C71B4 /* DEMOMenuViewController.m */,
 				1849FC2A1A383748008C71B4 /* DEMONavigationController.h */,
 				1849FC2B1A383748008C71B4 /* DEMONavigationController.m */,
 				1849FC2C1A383748008C71B4 /* DEMOSecondViewController.h */,
-				1849FC2D1A383748008C71B4 /* DEMOSecondViewController.m */,
+				181BE6501A4AA6BE004B5A84 /* DEMOSecondViewController.m */,
 				1849FC031A382ACF008C71B4 /* AppDelegate.m */,
 				1849FC081A382ACF008C71B4 /* Main.storyboard */,
+				18949F3C1A47DF1000C5C89B /* ImageViewController.h */,
+				18949F3D1A47DF1000C5C89B /* ImageViewController.m */,
 				1849FC0B1A382ACF008C71B4 /* Images.xcassets */,
+				187638381A51292000E01824 /* router.png */,
 				1849FC331A3845C8008C71B4 /* avatar.png */,
 				1849FC0D1A382ACF008C71B4 /* LaunchScreen.xib */,
 				1849FBFE1A382ACF008C71B4 /* Supporting Files */,
@@ -243,11 +252,9 @@
 			children = (
 				184B4FF91A455F1E00974BE9 /* TWCoreDataHelper.h */,
 				184B4FFA1A455F1E00974BE9 /* TWCoreDataHelper.m */,
-				184B4FFB1A455F1E00974BE9 /* TWPictureDataTransformer.h */,
-				184B4FFC1A455F1E00974BE9 /* TWPictureDataTransformer.m */,
-				184B4FFF1A455F3000974BE9 /* MiWiFi.xcdatamodeld */,
-				184B50021A45603A00974BE9 /* Photo.h */,
-				184B50031A45603A00974BE9 /* Photo.m */,
+				189E24D01A46B5B3001BAF90 /* RouterWifi.xcdatamodeld */,
+				189E24D31A46B609001BAF90 /* Photo.h */,
+				189E24D41A46B609001BAF90 /* Photo.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -312,6 +319,7 @@
 		C2DCC291534961833E2CEAB0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				181BE6481A4A9F5E004B5A84 /* UIKit.framework */,
 				18F23C7E1A397A810053AE88 /* SystemConfiguration.framework */,
 				18F23C7C1A397A620053AE88 /* Foundation.framework */,
 				18F23C7A1A397A350053AE88 /* Security.framework */,
@@ -377,6 +385,18 @@
 				TargetAttributes = {
 					1849FBFA1A382ACF008C71B4 = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = 9TJZ5LK3TA;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+							com.apple.WAC = {
+								enabled = 0;
+							};
+						};
 					};
 					1849FC131A382ACF008C71B4 = {
 						CreatedOnToolsVersion = 6.1;
@@ -408,6 +428,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				187638391A51292000E01824 /* router.png in Resources */,
 				1849FC341A3845C8008C71B4 /* avatar.png in Resources */,
 				1849FC0A1A382ACF008C71B4 /* Main.storyboard in Resources */,
 				1849FC0F1A382ACF008C71B4 /* LaunchScreen.xib in Resources */,
@@ -466,26 +487,25 @@
 				1849FC311A383748008C71B4 /* DEMONavigationController.m in Sources */,
 				184B4FFD1A455F1E00974BE9 /* TWCoreDataHelper.m in Sources */,
 				18B130561A3EB47900EC6693 /* MASViewAttribute.m in Sources */,
+				1876383B1A5141B100E01824 /* DEMOMenuViewController.m in Sources */,
+				189E24D51A46B609001BAF90 /* Photo.m in Sources */,
 				1849FC041A382ACF008C71B4 /* AppDelegate.m in Sources */,
+				18949F3E1A47DF1000C5C89B /* ImageViewController.m in Sources */,
 				1849FC011A382ACF008C71B4 /* main.m in Sources */,
 				184B500A1A45682A00974BE9 /* TWPhotosCollectionViewController.m in Sources */,
+				181BE6511A4AA6BE004B5A84 /* DEMOSecondViewController.m in Sources */,
 				18B130521A3EB47900EC6693 /* MASCompositeConstraint.m in Sources */,
 				18B130541A3EB47900EC6693 /* MASConstraintMaker.m in Sources */,
-				184B500D1A45687300974BE9 /* TWPhotoDetailViewController.m in Sources */,
+				189E24D21A46B5B3001BAF90 /* RouterWifi.xcdatamodeld in Sources */,
 				18B1305A1A3EB47900EC6693 /* View+MASAdditions.m in Sources */,
 				18B130551A3EB47900EC6693 /* MASLayoutConstraint.m in Sources */,
-				1891B6311A4026E600040E8E /* Reachability.m in Sources */,
 				18B130531A3EB47900EC6693 /* MASConstraint.m in Sources */,
-				184B50041A45603A00974BE9 /* Photo.m in Sources */,
+				183A8A441A4D53D10022C181 /* LocalWifiManager.m in Sources */,
 				18B130381A3EB3AE00EC6693 /* TimeLineViewControl.m in Sources */,
-				1849FC321A383748008C71B4 /* DEMOSecondViewController.m in Sources */,
 				184B4FF61A455EC700974BE9 /* AddPhotoViewController.m in Sources */,
-				184B50011A455F3000974BE9 /* MiWiFi.xcdatamodeld in Sources */,
 				184B4FF71A455EC700974BE9 /* ViewController.m in Sources */,
 				18B130581A3EB47900EC6693 /* NSArray+MASAdditions.m in Sources */,
 				18B130591A3EB47900EC6693 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
-				1849FC301A383748008C71B4 /* DEMOMenuViewController.m in Sources */,
-				184B4FFE1A455F1E00974BE9 /* TWPictureDataTransformer.m in Sources */,
 				18A45EB21A3A7C6100955141 /* SAMultisectorViewController.m in Sources */,
 				184B50091A45682A00974BE9 /* TWPhotoCollectionViewCell.m in Sources */,
 				1849FC2E1A383748008C71B4 /* DEMORootViewController.m in Sources */,
@@ -611,6 +631,8 @@
 			baseConfigurationReference = 8EA46D8A3730F16BC9564BFA /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MiWiFi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -618,6 +640,7 @@
 					"$(PROJECT_DIR)",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -626,6 +649,8 @@
 			baseConfigurationReference = 7FB9841AA49D5CB2B0495D35 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MiWiFi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -633,6 +658,7 @@
 					"$(PROJECT_DIR)",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -703,13 +729,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		184B4FFF1A455F3000974BE9 /* MiWiFi.xcdatamodeld */ = {
+		189E24D01A46B5B3001BAF90 /* RouterWifi.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				184B50001A455F3000974BE9 /* MiWiFi.xcdatamodel */,
+				189E24D11A46B5B3001BAF90 /* RouterWifi.xcdatamodel */,
 			);
-			currentVersion = 184B50001A455F3000974BE9 /* MiWiFi.xcdatamodel */;
-			path = MiWiFi.xcdatamodeld;
+			currentVersion = 189E24D11A46B5B3001BAF90 /* RouterWifi.xcdatamodel */;
+			path = RouterWifi.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
