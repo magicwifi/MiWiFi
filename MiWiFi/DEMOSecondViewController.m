@@ -8,7 +8,9 @@
 
 #import "DEMOSecondViewController.h"
 #import "AFNetworking.h"
-
+#import "UIColor+FlatUI.h"
+#import "UIFont+FlatUI.h"
+#import "UINavigationBar+FlatUI.h"
 
 #import "FUIButton.h"
 #import "UIColor+FlatUI.h"
@@ -103,7 +105,10 @@
     
     self.view.backgroundColor = [UIColor colorWithRed:26.0/255.0 green:26.0/255.0 blue:26.0/255.0 alpha:1.0];
 
-
+    self.navigationController.navigationBar.titleTextAttributes = @{NSFontAttributeName:[UIFont boldFlatFontOfSize:18],
+                                                                    NSForegroundColorAttributeName: [UIColor whiteColor]};
+    
+    [self.navigationController.navigationBar configureFlatNavigationBarWithColor:[UIColor midnightBlueColor]];
 }
 
 

@@ -46,7 +46,7 @@
 -(void)updateLocationStatusOnTimer {
 
     
-    [NSTimer scheduledTimerWithTimeInterval:10.0
+    [NSTimer scheduledTimerWithTimeInterval:5.0
                                      target:self
                                    selector:@selector(updateNetworkStatus)
                                    userInfo:nil

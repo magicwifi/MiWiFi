@@ -7,6 +7,9 @@
 //
 
 #import "AnanlysisViewController.h"
+#import "UIColor+FlatUI.h"
+#import "UIFont+FlatUI.h"
+#import "UINavigationBar+FlatUI.h"
 
 @interface AnanlysisViewController ()
 
@@ -17,8 +20,10 @@
 - (void)viewDidLoad {
     
     self.view.backgroundColor = [UIColor colorWithRed:26.0/255.0 green:26.0/255.0 blue:26.0/255.0 alpha:1.0];
-    [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
-    [self.navigationController.navigationBar setShadowImage:[UIImage new]];
+    self.navigationController.navigationBar.titleTextAttributes = @{NSFontAttributeName:[UIFont boldFlatFontOfSize:18],
+                                                                    NSForegroundColorAttributeName: [UIColor whiteColor]};
+    
+    [self.navigationController.navigationBar configureFlatNavigationBarWithColor:[UIColor midnightBlueColor]];
     
     [self showBarLine];
     
@@ -30,14 +35,14 @@
 -(void)showBarLine{
     
     
-    UILabel * barChartLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 70, SCREEN_WIDTH, 30)];
-    barChartLabel.text = @"关键词统计";
+    UILabel * barChartLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 90, SCREEN_WIDTH, 30)];
+    barChartLabel.text = @"搜索关键词捕获";
     barChartLabel.textColor = PNFreshGreen;
     barChartLabel.font = [UIFont fontWithName:@"Avenir-Medium" size:23.0];
     barChartLabel.textAlignment = NSTextAlignmentCenter;
     
     //PNBarChart *barChart = [[PNBarChart alloc] initWithFrame:CGRectMake(0, 135.0, SCREEN_WIDTH-70, 200.0)];
-    PNBarChart *barChart = [[PNBarChart alloc] initWithFrame:CGRectMake(0, 110.0, SCREEN_WIDTH, 200.0)];
+    PNBarChart *barChart = [[PNBarChart alloc] initWithFrame:CGRectMake(0, 130.0, SCREEN_WIDTH, 200.0)];
     barChart.backgroundColor = [UIColor clearColor];
     barChart.yLabelFormatter = ^(CGFloat yValue){
         CGFloat yValueParsed = yValue;
@@ -65,8 +70,8 @@
 
 -(void)showCircle{
     
-    UILabel * pieChartLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 340, SCREEN_WIDTH, 30)];
-    pieChartLabel.text = @"访客应用";
+    UILabel * pieChartLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 360, SCREEN_WIDTH, 30)];
+    pieChartLabel.text = @"高频应用";
     pieChartLabel.textColor = PNFreshGreen;
     pieChartLabel.font = [UIFont fontWithName:@"Avenir-Medium" size:23.0];
     pieChartLabel.textAlignment = NSTextAlignmentCenter;
@@ -76,7 +81,7 @@
                        [PNPieChartDataItem dataItemWithValue:40 color:PNDeepGreen description:@"微信"],
                        ];
     
-    PNPieChart *pieChart = [[PNPieChart alloc] initWithFrame:CGRectMake(70.0, 400.0, 240.0, 240.0) items:items];
+    PNPieChart *pieChart = [[PNPieChart alloc] initWithFrame:CGRectMake(70.0, 410.0, 240.0, 240.0) items:items];
     pieChart.descriptionTextColor = [UIColor whiteColor];
     pieChart.descriptionTextFont  = [UIFont fontWithName:@"Avenir-Medium" size:14.0];
     pieChart.descriptionTextShadowColor = [UIColor clearColor];

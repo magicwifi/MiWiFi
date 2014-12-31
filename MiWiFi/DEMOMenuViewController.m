@@ -167,7 +167,7 @@
     }
     
     if (indexPath.section == 0) {
-        NSArray *titles = @[@"智能路由", @"上网配置", @"访客记录"];
+        NSArray *titles = @[@"智能路由", @"上网配置", @"浏览记录"];
         cell.textLabel.text = titles[indexPath.row];
     } else {
         NSArray *titles = @[@"拍摄广告", @"选择广告", @"内容推荐"];
